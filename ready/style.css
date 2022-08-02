@@ -1,0 +1,130 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+    body {
+        background-color: hsl(30, 38%, 92%);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    /* IDs */
+    #container {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #leftSite {
+        width: 300px;
+        border-radius: 15px 0 0 15px;
+    }
+    
+    #rigthSite {
+        width: 300px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 15px 15px 0;
+    }
+    
+    #perfume {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: hsl(228, 12%, 48%);
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    
+    #description {
+        font-size: 14px;
+        padding-top: 20px;
+        line-height: 1.7;
+        padding-left: 30px;
+        color: hsl(228, 12%, 48%);
+    }
+    
+    #discount {
+        display: flex;
+        align-items: center;
+        padding: 20px 30px;
+    }
+    
+    #newPrice {
+        color: hsl(158, 36%, 37%);
+        font-family: 'Fraunces', serif;
+        font-size: 30px;
+    }
+    
+    #oldPrice {
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    
+    #icon {
+        padding-right: 10px;
+    }
+    
+    /* Structure */
+    
+    h1 {
+        color: hsl(212, 21%, 14%);
+        font-size: 35px;
+        font-family: 'Fraunces', serif;
+        padding-top: 20px;
+        line-height: 0.9;
+        padding-left: 30px;
+    }
+    
+    button {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(158, 36%, 37%);
+        width: 240px;
+        height: 50px;
+        border-radius: 7px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background-color: #194131;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+      background-color: salmon;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 325px;
+        margin-top: 3px;
+    }
+
+    #leftSite {
+        width: 325px;
+        content: url("../images/image-product-mobile.jpg");        
+        border-radius: 15px 15px 0 0;
+    }
+
+    #rightSite {
+        width: 325px;
+        border-radius: 0;
+    }
+
+}
+
+
